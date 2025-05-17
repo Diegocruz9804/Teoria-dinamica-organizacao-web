@@ -1,0 +1,13 @@
+Quando um usuário acessa uma página web, o processo de comunicação entre o navegador (cliente) e o servidor segue uma sequência bem definida de eventos que ocorre de forma quase instantânea, mas que envolve diversas etapas técnicas importantes.
+
+Tudo começa quando o usuário digita o endereço de um site, como `www.exemplo.com`, na barra do navegador. Nesse momento, o navegador precisa descobrir o endereço IP correspondente a esse nome de domínio, pois a internet funciona baseada em IPs, e não em nomes. Para fazer essa tradução, entra em ação o sistema de nomes de domínio, conhecido como DNS (Domain Name System). O DNS funciona como uma espécie de agenda da internet, que mapeia nomes legíveis por humanos para endereços IP. Uma vez obtido o IP, o navegador consegue localizar fisicamente o servidor onde o site está hospedado.
+
+Com o endereço IP em mãos, o navegador estabelece uma conexão com o servidor e envia uma solicitação. Essa solicitação é feita através do protocolo HTTP (ou HTTPS, quando há criptografia). Essa mensagem enviada é chamada de requisição HTTP e nela o navegador informa ao servidor qual recurso está pedindo — geralmente, o arquivo HTML que representa a página principal do site. Além disso, a requisição carrega informações como o tipo de navegador utilizado, cookies e dados de autenticação, se houver.
+
+O servidor, ao receber essa requisição, processa o pedido e responde com uma resposta HTTP. Essa resposta contém um código de status que indica se o pedido foi bem-sucedido (como o código 200, que significa OK) ou se houve algum problema (como 404, quando a página não é encontrada). Junto com esse código, o servidor envia o conteúdo solicitado, que normalmente é um arquivo HTML. Quando o navegador recebe esse HTML, ele começa a interpretar o conteúdo.
+
+Durante a leitura do HTML, o navegador identifica que outros recursos são necessários para compor a página — como arquivos de estilo CSS, scripts JavaScript e imagens. Para cada um desses recursos, o navegador faz novas requisições HTTP ao servidor, seguindo o mesmo processo: pede, recebe e interpreta. Ao receber todos esses elementos, o navegador renderiza a página, ou seja, exibe o conteúdo visual final para o usuário.
+
+Nesse processo, a validação da resposta, o tempo de carregamento e a exibição correta da página dependem tanto da eficiência do cliente quanto da estrutura do servidor. Todo esse fluxo acontece em questão de milissegundos, várias vezes a cada segundo, toda vez que uma nova página ou recurso é acessado na internet.
+
+Esse processo é essencial para que a navegação web funcione de forma fluida, segura e eficaz, garantindo que o conteúdo seja entregue corretamente do servidor ao cliente por meio de um protocolo padronizado e confiável.
