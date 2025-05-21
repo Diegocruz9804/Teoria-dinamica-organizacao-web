@@ -52,5 +52,3 @@ Essa expressão `/^[^\s@]+@[^\s@]+\.[^\s@]+$/` funciona assim:
 Esse padrão cobre a maioria dos e-mails válidos, mas você pode usar expressões mais complexas dependendo do nível de exigência.
 
 Em resumo, o JavaScript permite capturar os valores de um formulário, validá-los com regras personalizadas e expressões regulares, e impedir o envio se os dados estiverem incorretos. Isso melhora tanto a segurança quanto a usabilidade do site.
-
-Se quiser, posso te mostrar um exemplo completo com nome, e-mail e senha, tudo validado em tempo real.
