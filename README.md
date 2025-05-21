@@ -1,1 +1,1 @@
-# Teoria-dinamica-organizacao--web
+# Teoria-dinamica-organizacao-web
